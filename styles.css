@@ -36,3 +36,19 @@ body {
     border: 1px solid #ddd;
     min-height: 50px;
 }
+
+/* Add hover effect for buttons */
+.story-button:hover {
+    opacity: 0.8;
+}
+
+/* Style for the reset button */
+#reset-btn {
+    background-color: #ff4444;
+}
+
+/* Highlight selected parts */
+.selected {
+    color: #4CAF50;
+    font-weight: bold;
+}

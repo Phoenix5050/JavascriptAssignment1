@@ -34,3 +34,22 @@ function updateDisplay() {
     const story = `${selectedCharacter} ${selectedAction} ${selectedLocation}.`;
     document.getElementById('story-display').textContent = story;
 }
+
+// Reset functionality
+document.getElementById('reset-btn').addEventListener('click', () => {
+    selectedCharacter = '';
+    selectedAction = '';
+    selectedLocation = '';
+    updateDisplay();
+});
+
+// Improved updateDisplay with validation
+function updateDisplay() {
+    let story = '';
+    if (selectedCharacter && selectedAction && selectedLocation) {
+        story = `${selectedCharacter} ${selectedAction} ${selectedLocation}.`;
+    } else {
+        story = 'Click the buttons to build your story!';
+    }
+    document.getElementById('story-display').textContent = story;
+}
