@@ -20,6 +20,19 @@ body {
     margin: 20px 0;
 }
 
+/* Style for the direct-selection buttons container */
+#direct-buttons {
+    margin-top: 20px;
+}
+
+.direct-group {
+    margin-bottom: 15px;
+}
+
+.direct-group h3 {
+    margin: 10px 0 5px;
+}
+
 .story-button {
     padding: 10px 20px;
     margin: 5px;
